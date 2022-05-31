@@ -21,8 +21,15 @@ public:
 
 	cv::Mat* GetProcImage(uint32 i);
 
+	int counter;
+
 private:
 	cv::Mat* m_proc_image[3];/* we have three processing images for visualization available */
+	
+	cv::Mat m_prev_image;
+
+	cv::Mat mBkgrImage;
+
 };
 
 
