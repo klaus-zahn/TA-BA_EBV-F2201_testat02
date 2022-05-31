@@ -74,7 +74,7 @@ int CImageProcessor::DoProcess(cv::Mat* image) {
 				double dy = imgDy.at<int16_t>(rows, cols);
 
 				double alpha = atan2(dy, dx);
-				double rho = dx*cos(alpha) + dy*sin(alpha);//ZaK wrong formula
+				double rho = cols*cos(alpha) + rows*sin(alpha);//ZaK wrong formula
 
 				uint16_t indexRho=floor((rho/rhoMax)*0.5*rhoBins)+ceil(rhoBins/2);
 				uint16_t indexAlpha=floor((alpha/alphaMax)*0.5*alphaBins)+ceil(alphaBins/2);
