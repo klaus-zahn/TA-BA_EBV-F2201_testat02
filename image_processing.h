@@ -16,6 +16,8 @@ class CImageProcessor {
 public:
 	CImageProcessor();
 	~CImageProcessor();
+
+	cv::Mat mPrevImage, mBkgrImage;
 	
 	int DoProcess(cv::Mat* image);
 
