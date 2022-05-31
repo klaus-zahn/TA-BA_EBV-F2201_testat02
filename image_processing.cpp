@@ -1,4 +1,4 @@
-
+//ZaK :-)
 
 #include "image_processing.h"
 #include <cmath>
